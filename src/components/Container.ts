@@ -1,15 +1,13 @@
-import styled from 'styled-components';
+import styled, { ThemeProps } from 'styled-components';
+import { ITheme } from '../themes/dto/ITheme';
 
-interface teste {
-  a?: number;
-}
-export const Container = styled.div<teste>`
+export const Container = styled.div<{ theme: ThemeProps<ITheme> }>`
   background: ${props => props.theme.colors.background};
   color: ${props => props.theme.colors.textColor};
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 12px;
+  padding: 1.2rem;
   box-sizing: border-box;
 `;

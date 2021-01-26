@@ -9,7 +9,11 @@ const Home = () => {
   const { isDarkMode, toggleColorMode } = useDarkMode();
   return (
     <Card>
-      {isDarkMode ? 'Dark Mode is Enabled' : 'Dark Mode is Disabled'}
+      {isDarkMode ? (
+        <h4>Dark Mode is Enabled</h4>
+      ) : (
+        <h4>Dark Mode is Disabled</h4>
+      )}
       <Button onClick={toggleColorMode}>Toggle Dark Mode</Button>
       <Link to="/other-page">Go to other page</Link>
     </Card>
