@@ -1,11 +1,8 @@
-# bossabox-desafio-frontend
+# What is this
+An example app for toggling dark mode in styled components using react context API
 
-# Como rodar
-## Variáveis de ambiente
+# How to test
 
-Ajuste a variável `REACT_APP_API_URL` para o endereço da API
-
-## Comandos
-
-**build:** `yarn buid`
-**iniciar:** `yarn start`
+* git clone https://github.com/mateusdeitos/styled-components-dark-mode.git
+* yarn
+* yarn start
