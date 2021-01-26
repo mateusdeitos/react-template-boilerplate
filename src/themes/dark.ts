@@ -9,12 +9,12 @@ export const dark: ITheme = {
     linkColor: baseColors.blue[400],
     input: {
       background: {
-        base: baseColors[mainThemeColor][50],
-        focus: baseColors[mainThemeColor][100],
+        base: baseColors.gray[900],
+        focus: baseColors.gray[800],
       },
       borders: {
-        base: baseColors[mainThemeColor][200],
-        focus: baseColors[mainThemeColor][300],
+        base: baseColors.gray[500],
+        focus: baseColors[mainThemeColor][600],
       },
       placeholder: baseColors.gray[50],
     },

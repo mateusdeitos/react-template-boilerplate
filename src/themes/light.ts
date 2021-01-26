@@ -9,12 +9,12 @@ export const light: ITheme = {
     linkColor: baseColors.blue[700],
     input: {
       background: {
-        base: baseColors[mainThemeColor][600],
-        focus: baseColors[mainThemeColor][700],
+        base: baseColors.gray[200],
+        focus: baseColors.gray[300],
       },
       borders: {
-        base: baseColors[mainThemeColor][800],
-        focus: baseColors[mainThemeColor][900],
+        base: baseColors.gray[400],
+        focus: baseColors[mainThemeColor][500],
       },
       placeholder: baseColors.gray[900],
     },
