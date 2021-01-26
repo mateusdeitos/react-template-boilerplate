@@ -19,7 +19,14 @@ export interface ITheme {
       primary: {
         background: string;
         color: string;
+        hover: {
+          border: string;
+        };
       };
+    };
+    boxShadow: {
+      color1: string;
+      color2: string;
     };
   };
 }

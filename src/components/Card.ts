@@ -12,7 +12,8 @@ export const Card = styled.div<{ theme: ThemeProps<ITheme> }>`
   max-width: 500px;
   width: 100%;
   min-height: 300px;
-  box-shadow: 0 17px 11px rgb(0, 0, 0, 0.12), 0 2px 33px rgb(0, 0, 0, 0.24);
+  box-shadow: 0 4px 40px ${props => props.theme.colors.boxShadow.color1},
+    0 4px 40px ${props => props.theme.colors.boxShadow.color2};
   font-size: 2.4rem;
   font-family: 'Roboto', sans-serif;
 `;

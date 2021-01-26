@@ -22,7 +22,14 @@ export const dark: ITheme = {
       primary: {
         background: baseColors[mainThemeColor][600],
         color: baseColors[mainThemeColor][200],
+        hover: {
+          border: baseColors[mainThemeColor][100],
+        },
       },
+    },
+    boxShadow: {
+      color1: 'rgb(255, 255, 255, 0.12)',
+      color2: 'rgb(255, 255, 255, 0.24)',
     },
   },
 };

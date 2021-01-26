@@ -22,7 +22,14 @@ export const light: ITheme = {
       primary: {
         background: baseColors[mainThemeColor][200],
         color: baseColors[mainThemeColor][600],
+        hover: {
+          border: baseColors[mainThemeColor][800],
+        },
       },
+    },
+    boxShadow: {
+      color1: 'rgb(0, 0, 0, 0.12)',
+      color2: 'rgb(0, 0, 0, 0.24)',
     },
   },
 };
