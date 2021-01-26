@@ -1,8 +1,10 @@
+# UNDER CONSTRUCTION!
+
 # What is this
-An example app for toggling dark mode in styled components using react context API
+A React template repository with some stuff already implemented.
 
-# How to test
+# How to use
 
-* git clone https://github.com/mateusdeitos/styled-components-dark-mode.git
+* use Template
 * yarn
 * yarn start
