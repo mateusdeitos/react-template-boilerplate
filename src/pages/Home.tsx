@@ -18,6 +18,7 @@ const Home = () => {
       <Input />
       <Button onClick={toggleColorMode}>Toggle Dark Mode</Button>
       <Link to="/other-page">Go to other page</Link>
+      <Link to="/private-page">Go to private page</Link>
     </Card>
   );
 };
