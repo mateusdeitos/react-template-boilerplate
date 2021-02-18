@@ -10,9 +10,9 @@ export default createGlobalStyle<{ theme: ITheme }>`
       outline: 0;
     }
     html {
-      font-size: 10px;
+      font-size: 62.5%;
       ${windowLargerThan500px(css`
-        font-size: 14px;
+        font-size: 100%;
       `)}
     }
     body {
