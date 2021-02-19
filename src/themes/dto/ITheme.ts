@@ -1,3 +1,21 @@
+type IButton = {
+  background: string;
+  color: string;
+  hover: {
+    border: string;
+  };
+};
+
+type ISwitch = {
+  base: {
+    background: string;
+    color: string;
+  };
+  active: {
+    background: string;
+    color: string;
+  };
+};
 export interface ITheme {
   colors: {
     background: string;
@@ -16,14 +34,10 @@ export interface ITheme {
       placeholder: string;
     };
     button: {
-      primary: {
-        background: string;
-        color: string;
-        hover: {
-          border: string;
-        };
-      };
+      primary: IButton;
+      secondary: IButton;
     };
+    switch: ISwitch;
     boxShadow: {
       color1: string;
       color2: string;

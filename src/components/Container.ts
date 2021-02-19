@@ -6,8 +6,9 @@ export const Container = styled.div<{ theme: ThemeProps<ITheme> }>`
   color: ${props => props.theme.colors.textColor};
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 1.2rem;
   box-sizing: border-box;
 `;

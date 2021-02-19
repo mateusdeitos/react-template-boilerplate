@@ -18,12 +18,29 @@ export const light: ITheme = {
       },
       placeholder: baseColors.gray[900],
     },
+    switch: {
+      base: {
+        background: baseColors[mainThemeColor][200],
+        color: baseColors[mainThemeColor][600],
+      },
+      active: {
+        background: baseColors[mainThemeColor][600],
+        color: baseColors[mainThemeColor][200],
+      },
+    },
     button: {
       primary: {
         background: baseColors[mainThemeColor][200],
         color: baseColors[mainThemeColor][600],
         hover: {
           border: baseColors[mainThemeColor][800],
+        },
+      },
+      secondary: {
+        background: baseColors[mainThemeColor][100],
+        color: baseColors[mainThemeColor][600],
+        hover: {
+          border: baseColors[mainThemeColor][500],
         },
       },
     },

@@ -10,7 +10,7 @@ export default createGlobalStyle<{ theme: ITheme }>`
       outline: 0;
     }
     html {
-      font-size: 62.5%;
+      font-size: 75%;
       ${windowLargerThan500px(css`
         font-size: 100%;
       `)}
