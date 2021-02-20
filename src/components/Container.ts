@@ -11,4 +11,5 @@ export const Container = styled.div<{ theme: ThemeProps<ITheme> }>`
   justify-content: flex-start;
   padding: 1.2rem;
   box-sizing: border-box;
+  margin-bottom: 5rem;
 `;

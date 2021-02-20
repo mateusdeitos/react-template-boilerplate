@@ -7,16 +7,19 @@ import themes from './themes';
 import { Container } from './components/Container';
 import { useDarkMode } from './hooks/useDarkMode';
 import Routes from './routes';
+import { ConfirmationServiceProvider } from './hooks/useConfirmation';
 
 const App = () => {
   const { isDarkMode } = useDarkMode();
   const { dark, light } = themes;
   return (
     <ThemeProvider theme={isDarkMode ? dark : light}>
-      <Container>
-        <Global />
-        <Routes />
-      </Container>
+      <ConfirmationServiceProvider>
+        <Container>
+          <Global />
+          <Routes />
+        </Container>
+      </ConfirmationServiceProvider>
     </ThemeProvider>
   );
 };

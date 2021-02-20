@@ -3,7 +3,7 @@ import { Select as StyledSelect, Label, Wrapper } from './styles';
 
 interface Options {
   label: string;
-  value: string;
+  value: string | number;
 }
 
 interface SelectProps extends React.SelectHTMLAttributes<HTMLSelectElement> {

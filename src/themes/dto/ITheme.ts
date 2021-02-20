@@ -28,6 +28,7 @@ export interface ITheme {
   colors: {
     background: string;
     cardBackground: string;
+    popupBackground: string;
     textColor: string;
     linkColor: string;
     input: {

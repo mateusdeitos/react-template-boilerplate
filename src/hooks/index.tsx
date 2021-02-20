@@ -1,5 +1,6 @@
 import React from 'react';
 import { AuthProvider } from './useAuth';
+import { ConfirmationServiceProvider } from './useConfirmation';
 import { DarkModeProvider } from './useDarkMode';
 
 const HooksProvider: React.FC = ({ children }) => {

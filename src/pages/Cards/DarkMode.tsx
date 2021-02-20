@@ -15,7 +15,6 @@ const CardDarkMode: React.FC = () => {
           onChange={toggleColorMode}
           label={`Dark Mode is ${isDarkMode ? 'Enabled' : 'Disabled'}`}
         />
-        <hr />
       </Container>
     </Card>
   );

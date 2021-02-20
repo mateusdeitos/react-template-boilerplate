@@ -18,9 +18,7 @@ export const Card = styled.div<{ theme: ThemeProps<ITheme> }>`
   font-size: 2.4rem;
   font-family: 'Roboto', sans-serif;
 
-  & + & {
-    margin-top: 5rem;
-  }
+  margin-bottom: 2.5rem;
 
   h1,
   h2,

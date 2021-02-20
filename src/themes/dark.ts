@@ -6,6 +6,7 @@ export const dark: ITheme = {
   colors: {
     background: baseColors.gray[800],
     cardBackground: baseColors.gray[700],
+    popupBackground: baseColors.gray[600],
     textColor: baseColors.gray[50],
     linkColor: baseColors.blue[400],
     input: {
