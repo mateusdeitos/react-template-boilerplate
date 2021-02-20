@@ -62,6 +62,13 @@ export default createGlobalStyle<{ theme: ITheme }>`
       opacity: 1;
       font-size: 1.6rem;
     }
+    small {
+      letter-spacing: 0.4px;
+      font-family: 'Roboto', sans-serif;
+      color: ${props => props.theme.colors.textColor};
+      opacity: 1;
+      font-size: 1rem;
+    }
     a {
       letter-spacing: 0.4px;
       font-family: 'Roboto', sans-serif;

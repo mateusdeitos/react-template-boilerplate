@@ -1,31 +1,65 @@
 import React from 'react';
 import { ClipLoader } from 'react-spinners';
 import { useDarkMode } from '../../hooks/useDarkMode';
-import { Button as StyledButton } from './styles';
+import {
+  ContainedButton,
+  TextButton,
+  ButtonColor,
+  ButtonVariant,
+} from './styles';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  order: 'primary' | 'secondary';
+  color: ButtonColor;
+  variant: ButtonVariant;
   isLoading?: boolean;
 }
 
+const LoadingIndicator: React.FC<ButtonProps> = ({ color, variant }) => {
+  const { currentTheme } = useDarkMode();
+  return (
+    <ClipLoader
+      color={currentTheme.colors.button[variant][color].color}
+      size="1.6rem"
+    />
+  );
+};
+
 const Button: React.FC<ButtonProps> = ({
   isLoading = false,
-  order,
+  color,
+  variant,
   children,
   ...rest
 }) => {
-  const { currentTheme } = useDarkMode();
+  if (variant === 'text') {
+    return (
+      <TextButton
+        disabled={isLoading}
+        variant={variant}
+        color={color}
+        {...rest}
+      >
+        {isLoading ? (
+          <LoadingIndicator color={color} variant={variant} />
+        ) : (
+          children
+        )}
+      </TextButton>
+    );
+  }
   return (
-    <StyledButton disabled={isLoading} order={order} {...rest}>
+    <ContainedButton
+      disabled={isLoading}
+      variant={variant}
+      color={color}
+      {...rest}
+    >
       {isLoading ? (
-        <ClipLoader
-          color={currentTheme.colors.button[order].color}
-          size="1.6rem"
-        />
+        <LoadingIndicator color={color} variant={variant} />
       ) : (
         children
       )}
-    </StyledButton>
+    </ContainedButton>
   );
 };
 

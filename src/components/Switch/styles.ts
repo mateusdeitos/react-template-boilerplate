@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+const scalePercentage = 0.7;
+
 export const Wrapper = styled.div`
   display: flex;
 `;
@@ -8,7 +10,7 @@ export const SwitchBox = styled.div`
   flex: 1;
 
   label {
-    margin-left: 1rem;
+    margin-left: 0.5rem;
     cursor: pointer;
   }
 `;
@@ -21,7 +23,7 @@ export const SwitchCheckbox = styled.input`
   position: relative;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-
+  transform: scale(${scalePercentage});
   &:checked {
     background: ${props => props.theme.colors.switch.active.background};
     border-color: ${props => props.theme.colors.switch.active.color};

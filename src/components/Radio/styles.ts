@@ -1,6 +1,7 @@
 /* eslint-disable consistent-return */
 import styled, { css } from 'styled-components';
 
+const scalePercentage = 0.7;
 export const SwitchBox = styled.div`
   display: flex;
 
@@ -8,11 +9,12 @@ export const SwitchBox = styled.div`
     display: flex;
   }
   span {
-    margin-left: 1rem;
+    margin-left: 0.5rem;
     cursor: pointer;
   }
 `;
 export const SwitchRadio = styled.input`
+  transform: scale(${scalePercentage});
   appearance: none;
   width: 3.5rem;
   height: 1.5rem;
@@ -46,9 +48,15 @@ export const SwitchRadio = styled.input`
   }
 `;
 
+export const RadioTitle = styled.small``;
+
 export const Wrapper = styled.div<{ orientation: 'horizontal' | 'vertical' }>`
   display: flex;
   flex-direction: column;
+
+  & + & {
+    margin-top: 1rem;
+  }
   ${SwitchBox} {
     flex: 1;
     :not(:first-child) {

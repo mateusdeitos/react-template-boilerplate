@@ -41,7 +41,11 @@ const DarkModeProvider: React.FC = ({ children }) => {
 
   return (
     <DarkModeContext.Provider
-      value={{ toggleColorMode, isDarkMode, currentTheme }}
+      value={{
+        toggleColorMode,
+        isDarkMode,
+        currentTheme,
+      }}
     >
       {children}
     </DarkModeContext.Provider>

@@ -1,3 +1,4 @@
+import { transparentize } from 'polished';
 import { baseColors, mainThemeColor } from './colors';
 import { ITheme } from './dto/ITheme';
 
@@ -29,18 +30,36 @@ export const light: ITheme = {
       },
     },
     button: {
-      primary: {
-        background: baseColors[mainThemeColor][200],
-        color: baseColors[mainThemeColor][600],
-        hover: {
-          border: baseColors[mainThemeColor][800],
+      contained: {
+        primary: {
+          background: baseColors[mainThemeColor][200],
+          color: baseColors[mainThemeColor][600],
+          hover: {
+            border: baseColors[mainThemeColor][800],
+          },
+        },
+        secondary: {
+          background: baseColors[mainThemeColor][100],
+          color: baseColors[mainThemeColor][600],
+          hover: {
+            border: baseColors[mainThemeColor][500],
+          },
         },
       },
-      secondary: {
-        background: baseColors[mainThemeColor][100],
-        color: baseColors[mainThemeColor][600],
-        hover: {
-          border: baseColors[mainThemeColor][500],
+      text: {
+        primary: {
+          background: transparentize(0.5, baseColors[mainThemeColor][200]),
+          color: baseColors[mainThemeColor][200],
+          hover: {
+            border: 'transparent',
+          },
+        },
+        secondary: {
+          background: transparentize(0.5, baseColors[mainThemeColor][100]),
+          color: baseColors[mainThemeColor][100],
+          hover: {
+            border: 'transparent',
+          },
         },
       },
     },

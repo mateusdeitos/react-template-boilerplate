@@ -5,6 +5,14 @@ type IButton = {
     border: string;
   };
 };
+type IButtonColor = {
+  primary: IButton;
+  secondary: IButton;
+};
+type IButtonVariant = {
+  contained: IButtonColor;
+  text: IButtonColor;
+};
 
 type ISwitch = {
   base: {
@@ -33,10 +41,7 @@ export interface ITheme {
       };
       placeholder: string;
     };
-    button: {
-      primary: IButton;
-      secondary: IButton;
-    };
+    button: IButtonVariant;
     switch: ISwitch;
     boxShadow: {
       color1: string;
